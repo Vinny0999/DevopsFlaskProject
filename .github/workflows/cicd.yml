@@ -17,5 +17,9 @@ jobs:
             python-version: 3.11.8
 
         - name: List Files
-          run:
-            echo "Terry is teaching"
+          run: ls -al
+       
+        - name: Install dependencies
+          run: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
