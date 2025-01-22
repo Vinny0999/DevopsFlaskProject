@@ -9,3 +9,9 @@ jobs:
     build:
 
         runs-on: ubuntu
+        steps:
+        - uses: actions/checkout@v4
+        - name: setting up the python env
+          uses: actions/setup-python@v3
+          with:
+            python-version: 3.11.8
