@@ -50,5 +50,5 @@ jobs:
 
       - name: Build and Push Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-project:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/flask-project:latest
+          docker build -t vinny0999/flask-project${{github.sha}}
+          docker push vinny0999/flask-project:${{github.sha}}
